@@ -29,7 +29,7 @@
 
 #include <string>
 #include "ISensor.h"
-#include "..\grove\GroveTemperature.h"
+#include "grove\GroveTemperature.h"
 
 #define GROVETEMPERATURESENSOR_NAME "GroveTemperatureSensor"
 

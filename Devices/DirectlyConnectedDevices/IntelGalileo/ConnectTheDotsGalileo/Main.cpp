@@ -25,7 +25,7 @@
 #include "stdafx.h"
 #include <arduino.h>
 #include "sensors\Sensors.h"
-#include "json.h"
+#include "json\json.h"
 #include "Configuration.h"
 #include "amqp\amqp.h"
 

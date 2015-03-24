@@ -33,9 +33,9 @@
 #include <locale>
 #include <string>
 #include <vector>
-#include "arduino.h"
-#include "rapidxml.hpp"
-#include "rapidxml_utils.hpp"
+#include <arduino.h>
+#include "xml\rapidxml.hpp"
+#include "xml\rapidxml_utils.hpp"
 
 class Configuration
 {

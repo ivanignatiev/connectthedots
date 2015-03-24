@@ -41,6 +41,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\common\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -84,42 +85,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\common\amqp\Address.h" />
+    <ClInclude Include="..\common\amqp\Receiver.h" />
+    <ClInclude Include="..\common\grove\grove.h" />
+    <ClInclude Include="..\common\grove\GroveBuzzer.h" />
+    <ClInclude Include="..\common\grove\GroveLED.h" />
+    <ClInclude Include="..\common\grove\rgb_lcd.h" />
+    <ClInclude Include="..\common\json\JSON.h" />
+    <ClInclude Include="..\common\json\JSONValue.h" />
+    <ClInclude Include="..\common\xml\rapidxml.hpp" />
+    <ClInclude Include="..\common\xml\rapidxml_utils.hpp" />
     <ClInclude Include="AllCommands.h" />
-    <ClInclude Include="amqp\Address.h" />
-    <ClInclude Include="amqp\Receiver.h" />
     <ClInclude Include="BuzzerAlarmCommand.h" />
     <ClInclude Include="Configuration.h" />
-    <ClInclude Include="json\JSON.h" />
-    <ClInclude Include="json\JSONValue.h" />
     <ClInclude Include="LightCommand.h" />
     <ClInclude Include="Commands.h" />
-    <ClInclude Include="grove\GroveBuzzer.h" />
-    <ClInclude Include="grove\GroveLED.h" />
-    <ClInclude Include="grove\rgb_lcd.h" />
     <ClInclude Include="ScreenTextCommand.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="xml\rapidxml.hpp" />
-    <ClInclude Include="xml\rapidxml_utils.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="amqp\Address.cpp" />
-    <ClCompile Include="amqp\Receiver.cpp" />
+    <ClCompile Include="..\common\amqp\Address.cpp" />
+    <ClCompile Include="..\common\amqp\Receiver.cpp" />
+    <ClCompile Include="..\common\grove\GroveBuzzer.cpp" />
+    <ClCompile Include="..\common\grove\GroveLED.cpp" />
+    <ClCompile Include="..\common\grove\rgb_lcd.cpp" />
+    <ClCompile Include="..\common\json\JSON.cpp" />
+    <ClCompile Include="..\common\json\JSONValue.cpp" />
     <ClCompile Include="BuzzerAlarmCommand.cpp" />
     <ClCompile Include="Configuration.cpp" />
-    <ClCompile Include="json\JSON.cpp" />
-    <ClCompile Include="json\JSONValue.cpp" />
     <ClCompile Include="LightCommand.cpp" />
     <ClCompile Include="Commands.cpp" />
-    <ClCompile Include="grove\GroveBuzzer.cpp" />
-    <ClCompile Include="grove\GroveLED.cpp" />
-    <ClCompile Include="grove\rgb_lcd.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="ScreenTextCommand.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Docs\README.md" />
+    <None Include="..\Service.md" />
     <None Include="IntelGalileoService.exe.config" />
     <None Include="packages.config" />
   </ItemGroup>

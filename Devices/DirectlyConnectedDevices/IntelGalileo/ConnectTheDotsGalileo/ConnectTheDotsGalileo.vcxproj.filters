@@ -31,14 +31,8 @@
     <Filter Include="Header Files\xml">
       <UniqueIdentifier>{2b32385d-2c88-467b-8560-d1c890b95f97}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\weatherShield">
-      <UniqueIdentifier>{70c04909-625c-48e6-9409-13e6f8557ffe}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\json">
       <UniqueIdentifier>{0527e247-7397-4120-a0da-ee0f83b59719}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\weatherShield">
-      <UniqueIdentifier>{552e2321-0194-43e2-8a8e-52518609ce25}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\json">
       <UniqueIdentifier>{2f05e74f-2bea-40d3-a5f2-ff7bf92d965b}</UniqueIdentifier>
@@ -49,6 +43,12 @@
     <Filter Include="Source Files\sensors">
       <UniqueIdentifier>{cca0dd09-de6a-4fdb-bdd5-8e97582bebba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\weather">
+      <UniqueIdentifier>{552e2321-0194-43e2-8a8e-52518609ce25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\weather">
+      <UniqueIdentifier>{70c04909-625c-48e6-9409-13e6f8557ffe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -56,66 +56,6 @@
     </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="amqp\Address.h">
-      <Filter>Header Files\amqp</Filter>
-    </ClInclude>
-    <ClInclude Include="amqp\amqp.h">
-      <Filter>Header Files\amqp</Filter>
-    </ClInclude>
-    <ClInclude Include="amqp\AMQPData.h">
-      <Filter>Header Files\amqp</Filter>
-    </ClInclude>
-    <ClInclude Include="amqp\AMQPString.h">
-      <Filter>Header Files\amqp</Filter>
-    </ClInclude>
-    <ClInclude Include="amqp\AMQPSymbol.h">
-      <Filter>Header Files\amqp</Filter>
-    </ClInclude>
-    <ClInclude Include="amqp\AMQPuuid.h">
-      <Filter>Header Files\amqp</Filter>
-    </ClInclude>
-    <ClInclude Include="grove\GroveLight.h">
-      <Filter>Header Files\grove</Filter>
-    </ClInclude>
-    <ClInclude Include="grove\grove.h">
-      <Filter>Header Files\grove</Filter>
-    </ClInclude>
-    <ClInclude Include="grove\GroveTemperature.h">
-      <Filter>Header Files\grove</Filter>
-    </ClInclude>
-    <ClInclude Include="amqp\IMessage.h">
-      <Filter>Header Files\amqp</Filter>
-    </ClInclude>
-    <ClInclude Include="amqp\IAMQPData.h">
-      <Filter>Header Files\amqp</Filter>
-    </ClInclude>
-    <ClInclude Include="amqp\Sender.h">
-      <Filter>Header Files\amqp</Filter>
-    </ClInclude>
-    <ClInclude Include="rapidxml.hpp">
-      <Filter>Header Files\xml</Filter>
-    </ClInclude>
-    <ClInclude Include="rapidxml_utils.hpp">
-      <Filter>Header Files\xml</Filter>
-    </ClInclude>
-    <ClInclude Include="MPL3115A2.h">
-      <Filter>Header Files\weatherShield</Filter>
-    </ClInclude>
-    <ClInclude Include="HTU21D.h">
-      <Filter>Header Files\weatherShield</Filter>
-    </ClInclude>
-    <ClInclude Include="amqp\JsonMessage.h">
-      <Filter>Header Files\amqp</Filter>
-    </ClInclude>
-    <ClInclude Include="JSON.h">
-      <Filter>Header Files\json</Filter>
-    </ClInclude>
-    <ClInclude Include="JSONValue.h">
-      <Filter>Header Files\json</Filter>
-    </ClInclude>
-    <ClInclude Include="amqp\TextMessage.h">
-      <Filter>Header Files\amqp</Filter>
     </ClInclude>
     <ClInclude Include="Configuration.h">
       <Filter>Header Files</Filter>
@@ -150,6 +90,66 @@
     <ClInclude Include="sensors\OnBoardTemperatureSensor.h">
       <Filter>Header Files\sensors</Filter>
     </ClInclude>
+    <ClInclude Include="..\common\xml\rapidxml.hpp">
+      <Filter>Header Files\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\xml\rapidxml_utils.hpp">
+      <Filter>Header Files\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\weather\HTU21D.h">
+      <Filter>Header Files\weather</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\weather\MPL3115A2.h">
+      <Filter>Header Files\weather</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\json\JSON.h">
+      <Filter>Header Files\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\json\JSONValue.h">
+      <Filter>Header Files\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\grove\grove.h">
+      <Filter>Header Files\grove</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\grove\GroveLight.h">
+      <Filter>Header Files\grove</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\grove\GroveTemperature.h">
+      <Filter>Header Files\grove</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\amqp\Address.h">
+      <Filter>Header Files\amqp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\amqp\amqp.h">
+      <Filter>Header Files\amqp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\amqp\AMQPData.h">
+      <Filter>Header Files\amqp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\amqp\AMQPString.h">
+      <Filter>Header Files\amqp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\amqp\AMQPSymbol.h">
+      <Filter>Header Files\amqp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\amqp\AMQPuuid.h">
+      <Filter>Header Files\amqp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\amqp\IAMQPData.h">
+      <Filter>Header Files\amqp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\amqp\IMessage.h">
+      <Filter>Header Files\amqp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\amqp\JsonMessage.h">
+      <Filter>Header Files\amqp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\amqp\Sender.h">
+      <Filter>Header Files\amqp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\amqp\TextMessage.h">
+      <Filter>Header Files\amqp</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -158,116 +158,53 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="amqp\Address.cpp">
-      <Filter>Source Files\amqp</Filter>
-    </ClCompile>
-    <ClCompile Include="amqp\AMQPString.cpp">
-      <Filter>Source Files\amqp</Filter>
-    </ClCompile>
-    <ClCompile Include="amqp\AMQPSymbol.cpp">
-      <Filter>Source Files\amqp</Filter>
-    </ClCompile>
-    <ClCompile Include="amqp\AMQPuuid.cpp">
-      <Filter>Source Files\amqp</Filter>
-    </ClCompile>
-    <ClCompile Include="grove\GroveLight.cpp">
-      <Filter>Source Files\grove</Filter>
-    </ClCompile>
-    <ClCompile Include="grove\GroveTemperature.cpp">
-      <Filter>Source Files\grove</Filter>
-    </ClCompile>
-    <ClCompile Include="amqp\Sender.cpp">
-      <Filter>Source Files\amqp</Filter>
-    </ClCompile>
-    <ClCompile Include="amqp\TextMessage.cpp">
-      <Filter>Source Files\amqp</Filter>
-    </ClCompile>
-    <ClCompile Include="amqp\JsonMessage.cpp">
-      <Filter>Source Files\amqp</Filter>
-    </ClCompile>
-    <ClCompile Include="HTU21D.cpp">
-      <Filter>Source Files\weatherShield</Filter>
-    </ClCompile>
-    <ClCompile Include="JSON.cpp">
-      <Filter>Source Files\json</Filter>
-    </ClCompile>
-    <ClCompile Include="JSONValue.cpp">
-      <Filter>Source Files\json</Filter>
-    </ClCompile>
-    <ClCompile Include="MPL3115A2.cpp">
-      <Filter>Source Files\weatherShield</Filter>
-    </ClCompile>
     <ClCompile Include="Configuration.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="sensors\Sensors.cpp">
       <Filter>Source Files\sensors</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\LiquidCrystal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\Print.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\Stepper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\Stream.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\WString.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\eeprom.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\Servo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\HardwareSerial.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\NetworkSerial.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\PulseIn.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\DmapSupport.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\GalileoPins.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\GpioController.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\I2cController.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\PCA9685Support.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\PCAL9535ASupport.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\CY8C9540ASupport.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\Spi.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\SpiController.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\WInterrupt.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)\Source\arduino.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="sensors\WheaterShield.cpp">
       <Filter>Source Files\sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\weather\HTU21D.cpp">
+      <Filter>Source Files\weather</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\weather\MPL3115A2.cpp">
+      <Filter>Source Files\weather</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\json\JSON.cpp">
+      <Filter>Source Files\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\json\JSONValue.cpp">
+      <Filter>Source Files\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\grove\GroveLight.cpp">
+      <Filter>Source Files\grove</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\grove\GroveTemperature.cpp">
+      <Filter>Source Files\grove</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\amqp\Address.cpp">
+      <Filter>Source Files\amqp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\amqp\AMQPString.cpp">
+      <Filter>Source Files\amqp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\amqp\AMQPSymbol.cpp">
+      <Filter>Source Files\amqp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\amqp\AMQPuuid.cpp">
+      <Filter>Source Files\amqp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\amqp\JsonMessage.cpp">
+      <Filter>Source Files\amqp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\amqp\Sender.cpp">
+      <Filter>Source Files\amqp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\amqp\TextMessage.cpp">
+      <Filter>Source Files\amqp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

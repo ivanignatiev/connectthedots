@@ -28,8 +28,8 @@
 #define WEATHERSHIELD_H_
 
 #include <arduino.h>
-#include "..\HTU21D.h"
-#include "..\MPL3115A2.h"
+#include "weather\HTU21D.h"
+#include "weather\MPL3115A2.h"
 
 class WeatherShield 
 {

@@ -29,7 +29,7 @@
 
 #include <string>
 #include "ISensor.h"
-#include "..\grove\GroveLight.h"
+#include "grove\GroveLight.h"
 
 #define GROVELIGHTSENSOR_NAME "GroveLightSensor"
 

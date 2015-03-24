@@ -39,7 +39,7 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(SolutionDir)\common\;$(WindowsSDK_IncludePath)</IncludePath>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -101,27 +101,27 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="amqp\Address.h" />
-    <ClInclude Include="amqp\amqp.h" />
-    <ClInclude Include="amqp\AMQPData.h" />
-    <ClInclude Include="amqp\AMQPString.h" />
-    <ClInclude Include="amqp\AMQPSymbol.h" />
-    <ClInclude Include="amqp\AMQPuuid.h" />
-    <ClInclude Include="amqp\IAMQPData.h" />
-    <ClInclude Include="amqp\IMessage.h" />
-    <ClInclude Include="amqp\JsonMessage.h" />
-    <ClInclude Include="amqp\Sender.h" />
-    <ClInclude Include="amqp\TextMessage.h" />
+    <ClInclude Include="..\common\amqp\Address.h" />
+    <ClInclude Include="..\common\amqp\amqp.h" />
+    <ClInclude Include="..\common\amqp\AMQPData.h" />
+    <ClInclude Include="..\common\amqp\AMQPString.h" />
+    <ClInclude Include="..\common\amqp\AMQPSymbol.h" />
+    <ClInclude Include="..\common\amqp\AMQPuuid.h" />
+    <ClInclude Include="..\common\amqp\IAMQPData.h" />
+    <ClInclude Include="..\common\amqp\IMessage.h" />
+    <ClInclude Include="..\common\amqp\JsonMessage.h" />
+    <ClInclude Include="..\common\amqp\Sender.h" />
+    <ClInclude Include="..\common\amqp\TextMessage.h" />
+    <ClInclude Include="..\common\grove\grove.h" />
+    <ClInclude Include="..\common\grove\GroveLight.h" />
+    <ClInclude Include="..\common\grove\GroveTemperature.h" />
+    <ClInclude Include="..\common\json\JSON.h" />
+    <ClInclude Include="..\common\json\JSONValue.h" />
+    <ClInclude Include="..\common\weather\HTU21D.h" />
+    <ClInclude Include="..\common\weather\MPL3115A2.h" />
+    <ClInclude Include="..\common\xml\rapidxml.hpp" />
+    <ClInclude Include="..\common\xml\rapidxml_utils.hpp" />
     <ClInclude Include="Configuration.h" />
-    <ClInclude Include="grove\grove.h" />
-    <ClInclude Include="grove\GroveLight.h" />
-    <ClInclude Include="grove\GroveTemperature.h" />
-    <ClInclude Include="HTU21D.h" />
-    <ClInclude Include="JSON.h" />
-    <ClInclude Include="JSONValue.h" />
-    <ClInclude Include="MPL3115A2.h" />
-    <ClInclude Include="rapidxml.hpp" />
-    <ClInclude Include="rapidxml_utils.hpp" />
     <ClInclude Include="sensors\FakeSensor.h" />
     <ClInclude Include="sensors\GroveLightSensor.h" />
     <ClInclude Include="sensors\GroveTemperatureSensor.h" />
@@ -136,21 +136,21 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="amqp\Address.cpp" />
-    <ClCompile Include="amqp\AMQPString.cpp" />
-    <ClCompile Include="amqp\AMQPSymbol.cpp" />
-    <ClCompile Include="amqp\AMQPuuid.cpp" />
-    <ClCompile Include="amqp\JsonMessage.cpp" />
-    <ClCompile Include="amqp\Sender.cpp" />
-    <ClCompile Include="amqp\TextMessage.cpp" />
+    <ClCompile Include="..\common\amqp\Address.cpp" />
+    <ClCompile Include="..\common\amqp\AMQPString.cpp" />
+    <ClCompile Include="..\common\amqp\AMQPSymbol.cpp" />
+    <ClCompile Include="..\common\amqp\AMQPuuid.cpp" />
+    <ClCompile Include="..\common\amqp\JsonMessage.cpp" />
+    <ClCompile Include="..\common\amqp\Sender.cpp" />
+    <ClCompile Include="..\common\amqp\TextMessage.cpp" />
+    <ClCompile Include="..\common\grove\GroveLight.cpp" />
+    <ClCompile Include="..\common\grove\GroveTemperature.cpp" />
+    <ClCompile Include="..\common\json\JSON.cpp" />
+    <ClCompile Include="..\common\json\JSONValue.cpp" />
+    <ClCompile Include="..\common\weather\HTU21D.cpp" />
+    <ClCompile Include="..\common\weather\MPL3115A2.cpp" />
     <ClCompile Include="Configuration.cpp" />
-    <ClCompile Include="grove\GroveLight.cpp" />
-    <ClCompile Include="grove\GroveTemperature.cpp" />
-    <ClCompile Include="HTU21D.cpp" />
-    <ClCompile Include="JSON.cpp" />
-    <ClCompile Include="JSONValue.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="MPL3115A2.cpp" />
     <ClCompile Include="sensors\Sensors.cpp" />
     <ClCompile Include="sensors\WheaterShield.cpp" />
     <ClCompile Include="stdafx.cpp" />

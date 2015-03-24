@@ -7,7 +7,9 @@
     <RemoteDebuggerServerName>mygalileo</RemoteDebuggerServerName>
     <DeploymentDirectory>c:\test\</DeploymentDirectory>
     <RemoteDebuggerDeployDebugCppRuntime>false</RemoteDebuggerDeployDebugCppRuntime>
-    <AdditionalFiles>$(ProjectDir)\ConnectTheDotsGalileo.exe.config;$(SolutionDir)\Debug\libeay32.dll;$(SolutionDir)\Debug\ssleay32.dll;$(SolutionDir)\Debug\qpid-proton.dll;</AdditionalFiles>
+    <AdditionalFiles>$(ProjectDir)\ConnectTheDotsGalileo.exe.config;$(SolutionDir)\Debug\libeay32.dll;$(SolutionDir)\Debug\ssleay32.dll;$(SolutionDir)\Debug\qpid-proton.dll</AdditionalFiles>
+    <RemoteDebuggerCommandArguments>
+    </RemoteDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>

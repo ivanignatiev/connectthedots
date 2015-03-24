@@ -27,7 +27,7 @@
 #ifndef _AMQP_JSONMESSAGE_
 #define _AMQP_JSONMESSAGE_
 
-#include "..\JSON.h"
+#include "json\JSON.h"
 #include "TextMessage.h"
 
 namespace amqp
